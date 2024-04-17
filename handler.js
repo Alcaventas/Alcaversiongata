@@ -1324,7 +1324,7 @@ if (m.limit)
 m.reply(+m.limit + lenguajeGB.smsCont8())
 }
 if (m.money)
-m.reply(+m.money + ' 𝙈𝙄𝘾𝙃𝙄𝘾𝙊𝙄𝙉𝙎 🐱 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
+m.reply(+m.money + ' 𝘼𝙇𝘾𝘼𝘾𝙊𝙄𝙉𝙎 🐥 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
 break
 }}} catch (e) {
 console.error(e)
@@ -1414,7 +1414,7 @@ pp = await this.profilePictureUrl(user, 'image')
 let apii = await this.getFile(pp)                                      
 const botTt2 = groupMetadata.participants.find(u => this.decodeJid(u.id) == this.user.jid) || {} 
 const isBotAdminNn = botTt2?.admin === "admin" || false
-text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '𝗠𝗶𝗰𝗵𝗶𝗕𝗼𝘁 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿 𝗥𝗶𝗰𝗵𝗲𝘁𝘁𝗶 𝘆 𝗚𝗲𝗿𝗶𝗗𝘇𝗻') :
+text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿 @𝗔𝗹𝗰𝗮𝘀𝗵𝗼𝗽.𝗳𝗳') :
 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
 			    
 if (chat.antifake && isBotAdminNn && action === 'add') {
@@ -1435,7 +1435,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, '𝗠𝗶𝗰𝗵𝗶𝗕𝗼𝘁 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿 ' + gt + ' 😻', '𝗥𝗶𝗰𝗵𝗲𝘁𝘁𝗶 𝘆 𝗚𝗲𝗿𝗶𝗗𝘇𝗻'].getRandom(),
+"title": [wm, '𝗔𝗹𝗰𝗮𝗕𝗼𝘁 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿 ' + gt + ' 😻', '@𝗔𝗹𝗰𝗮𝘀𝗵𝗼𝗽.𝗳𝗳'].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: accountsgb }}}, { quoted: fkontak2 })
@@ -1524,7 +1524,7 @@ restrict: lenguajeGB['smsRestrict'](),
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝗠𝗶𝗰𝗵𝗶𝗕𝗼𝘁 ' + gt + ' 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿', '𝗥𝗶𝗰𝗵𝗲𝘁𝘁𝗶 𝘆 𝗚𝗲𝗿𝗶𝗗𝘇𝗻'].getRandom(), thumbnail: gataImg, sourceUrl: accountsgb }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝗔𝗹𝗰𝗮𝗕𝗼𝘁 ' + gt + ' 𝗖𝗿𝗲𝗮𝗱𝗼 𝗽𝗼𝗿', '@𝗔𝗹𝗰𝗮𝘀𝗵𝗼𝗽.𝗳𝗳'].getRandom(), thumbnail: gataImg, sourceUrl: accountsgb }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 
