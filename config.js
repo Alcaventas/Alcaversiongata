@@ -12,13 +12,8 @@ import { en, es, id, ar, pt } from "./lib/idiomas/total-idiomas.js"
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > Agrega el número que será Bot y los que serán propietarios.
 global.owner = [
-["51966254634", 'Richetti123', true], //MichiBot
-["56941827124", 'Geripium', true], //MichiBot
-["573175991775"], 
-["56941827124"],
-["56941827124"],
-["56941827124"],
-["56941827124"]]
+["528241050228", '𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24', true], //Alcabots
+["528246200244", '@alcashop.ff', true], //Alcabots
 
 global.mods = []
 global.prems = []
@@ -116,9 +111,8 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["593968263524", 'KrisBot', 1], 
-["5492266466080", 'KrisBot', 1],  
-["5521989092076", 'KrisBot', 1]]
+["528241050228", 'Alcashop', 1], 
+["528246200244", 'Alcashop', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -126,8 +120,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = "KrisBot"
-global.author = "KrisBot"
+global.packname = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
+global.author = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -135,7 +129,7 @@ global.author = "KrisBot"
 // [EN] > BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
 global.vsJB = "2.5 (Beta)"
-global.gt = "KrisBot"
+global.gt = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
@@ -161,8 +155,8 @@ global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎�
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "KrisBot"
-global.igfg = "KrisBot"
+global.wm = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
+global.igfg = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
 global.nomorown = "56941827124"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
