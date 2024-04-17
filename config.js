@@ -157,7 +157,7 @@ global.exito = eg
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 global.wm = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
 global.igfg = "𝘼𝙡𝙘𝙖𝘽𝙤𝙩𝙑.24"
-global.nomorown = "56941827124"
+global.nomorown = "528241050228"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
