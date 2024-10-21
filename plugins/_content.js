@@ -9,7 +9,7 @@ handler.all = async function (m) {
 global.key = ''
 
 // Cuentas
-const response = await fetch('https://raw.githubusercontent.com/Alcaventas/Alcaversiongata/master/official_accounts.json')  
+const response = await fetch('https://raw.githubusercontent.com/Alcaventas/Alcaversiongata/Ventas/official_accounts.json')  
 const data = await response.json()
 let { accounts, channels, groups, collaboration, sponsors, others } = data.info
 
@@ -54,9 +54,9 @@ global.redesMenu = [canal1, canal2, canal3, canal4, soporteGB, grupo1, grupo2, g
 global.accountsgb = [canal1, canal2, canal3, canal4, tk, ig, yt, paypal, fb, ths, md, asistencia].getRandom()
 
 var canalesInfo = [
-{ link: canal1, id: "120363160031023229@newsletter", name: "INFINITY-WA ð«" },
-{ link: canal2, id: "120363169294281316@newsletter", name: "GB - UPDATE â¨" },
-{ link: canal3, id: "120363203805910750@newsletter", name: "Tips sobre GataBot ð¤©" } 
+{ link: canal1, id: "120363160031023229@newsletter", name: "" },
+{ link: canal2, id: "120363169294281316@newsletter", name: "" },
+{ link: canal3, id: "120363203805910750@newsletter", name: "" } 
 ]
 var indiceAleatorio = Math.floor(Math.random() * canalesInfo.length)
 var channelRD = canalesInfo[indiceAleatorio]
