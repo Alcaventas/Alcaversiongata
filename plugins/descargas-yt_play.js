@@ -5,45 +5,33 @@ import axios from 'axios'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}${mid.smsMalused4}\n*${usedPrefix + command} Narita - Suei*`
+if (!text) return m.reply(lenguajeGB.smsMalused2() + `*${usedPrefix + command} Billie Eilish - Bellyache*`)
 try {
 const yt_play = await search(args.join(" "))
 let additionalText = ''
 if (command === 'play') { 
-additionalText = '𝘼𝙐𝘿𝙄𝙊 🔊'
+additionalText = '⬇️ A U D I O ⬇️'
 } else if (command === 'play2') {
-additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
-let captionvid = `𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*
+additionalText = '⬇️ V I D E O ⬇️'}
+let caption = `*◜⋯ ⋯ ⋯ Y O U T U B E ⋯ ⋯ ⋯◞*
+*◎ ${lenguajeGB.smsYT1()}*
+${yt_play[0].title}
 
-ও ${mid.smsYT1}
-»  ${yt_play[0].title}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ${mid.smsYT15}
-» ${yt_play[0].ago}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ${mid.smsYT5}
-» ${secondString(yt_play[0].duration.seconds)}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও  ${mid.smsYT10}
-» ${MilesNumber(yt_play[0].views)}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও  ${mid.smsYT4}
-» ${yt_play[0].url}
-﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-ও ${mid.smsAguarde(additionalText)}
+*◎ ${lenguajeGB.smsYT3()}*
+${secondString(yt_play[0].duration.seconds)}
 
-*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`  
-await conn.sendMessage(m.chat, {
-text: captionvid,
-contextInfo: {
-externalAdReply: {
-title: yt_play[0].title,
-body: packname,
-thumbnailUrl: yt_play[0].thumbnail, 
-mediaType: 1,
-showAdAttribution: true,
-renderLargerThumbnail: true
-}}} , { quoted: m })
+*◎ ${lenguajeGB.smsYT4()}*
+${MilesNumber(yt_play[0].views)}
+
+*◎ URL*
+${yt_play[0].url}
+*◜⋯ ⋯ ⋯ ${additionalText} ⋯ ⋯ ⋯◞*`  
+let message = await conn.sendMessage(m.chat, { text: caption, contextInfo: { externalAdReply: { title: wm, body: wait2.replace(/\*/g, ''), thumbnailUrl: yt_play[0].thumbnail, sourceUrl: md, mediaType: 1, showAdAttribution: false, renderLargerThumbnail: true }}})
+await m.react(sending)
+await message.react(waitemot)
+setTimeout(() => { message.react(waitemot2) }, 1000)
+//if (apiResponse.status !== 200) { 
+//setTimeout(() => { message.react(alert) }, 2000)}
 if (command == 'play') {	
 try {
 let q = '128kbps'
@@ -61,6 +49,8 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })   
+await m.react(sent)    
+await message.react(correct)
 } catch {
 try {
 const dataRE = await fetch(`https://api.akuari.my.id/downloader/youtube?link=${yt_play[0].url}`)
@@ -74,6 +64,8 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })   
+await m.react(sent)    
+await message.react(correct)
 } catch {
 try {
 let humanLol = await fetch(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkeysapi}&query=${yt_play[0].title}`)
@@ -87,6 +79,8 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })       
+await m.react(sent)    
+await message.react(correct)
 } catch {     
 try {
 let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${lolkeysapi}&url=${yt_play[0].url}`)    
@@ -101,6 +95,8 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })   
+await m.react(sent)    
+await message.react(correct)
 } catch {   
 try {
 let searchh = await yts(yt_play[0].url)
@@ -116,8 +112,11 @@ mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
 }}} , { quoted: m })   
+await m.react(sent)    
+await message.react(correct)
 //conn.sendMessage(m.chat, { audio: { url: ress.url }, fileName: __res[0].title + '.mp3', mimetype: 'audio/mp4' }, { quoted: m })  
 } catch {
+reportError(e)
 }}}}}
 }  
 if (command == 'play2') {
